@@ -1,0 +1,30 @@
+span {
+    font-size: 0.7rem;
+    color: rgb(114, 111, 111);
+    margin-bottom: 1rem;
+}
+h6 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.about__section {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width:769px) {
+   .about__section span {
+    text-align: justify;
+   }
+
+   .about__section {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    text-align: justify;
+   }
+   
+}

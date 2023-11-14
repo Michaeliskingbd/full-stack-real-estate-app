@@ -1,0 +1,14 @@
+@media screen and (max-width:769px) {
+    section {
+        width: var( --container-width-sm);
+        padding: 1rem 2rem;
+       
+        
+       
+    }
+}
+
+
+   
+    
+

@@ -1,0 +1,306 @@
+.singlepost__container {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    background: #f3f5f6;
+
+}
+
+.sp__image {
+    width: 30rem;
+    margin: auto;
+    margin-bottom: 2rem; 
+}
+.sp__image img {
+    width: 100%;  
+}
+
+.more__image img {
+    width: 95%;
+}
+.more__image {
+    width: 6rem;
+    height: 10rem;
+
+}
+
+
+.box {
+    padding: 2.5rem;
+}
+
+.sp__details {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    border: 1px solid var(--color-primary);
+    border-bottom: none;
+    margin-top: 4rem;
+    font-weight: 500;
+    align-items: center;
+    background: #fff;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    
+}
+
+.sp__pricing {
+    font-weight: 500;
+    font-size: 2rem;
+    
+}
+
+.sp__desc {
+    padding: 2rem;
+    border: 1px solid var(--color-primary);
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+   
+}
+.sp__bnb {
+
+    display: flex;
+    flex-direction: column;
+     padding: 2rem;
+    border: 1px solid var(--color-primary);
+    background: #fff;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+.sp__bnb label {
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.sp__bnb div span {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.sp__bnb div {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+.bnb__num {
+    padding: .1rem .8rem;
+    border: 1px solid var(--color-primary);
+}
+.bnb__num p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.comment__box h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.comments {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.comment__content {
+    margin-left: 1.5rem;
+     border: 1px dotted var(--color-variant);
+     padding: 2rem;
+     transition: transform 0.3s ease;
+     background: #fff;
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ 
+ .comment__content:hover {
+     cursor: pointer;
+     border-color: var(--color-secondary);
+     transform: scale(1.1);
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+   
+ }
+ .comment__content img {
+    width: 20%;
+    
+}
+
+.comment__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+
+.comment__info h3 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.com {
+    padding: 2rem;
+    border-radius: .5rem;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+.com textarea {
+    border-radius: .3rem;
+    height: 4rem;
+}
+.comm {
+    width: fit-content;
+    padding: .5rem 2rem;
+}
+
+
+
+@media screen and (max-width:480px) {
+
+    .singlepost__container {
+        display: flex;
+        flex-direction: column;
+        padding: .6rem;
+   
+    
+    }
+   
+    .more__image img {
+        width: 12rem;
+    }
+
+    .sp__image {
+        width: 30rem;
+        margin: auto;
+        margin-bottom: 2rem;
+        margin-top: 2rem
+
+    }
+    .sp__pricing {
+        font-weight: 500;
+        font-size: 2rem;
+        
+    }
+
+    .comments {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+       
+    }
+
+    .sp__image {
+        width: 20rem;
+        margin: auto;
+        margin-bottom: 1rem;
+        margin-top: 4rem;  
+    }
+
+    .sp__details {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
+        padding: 3rem;
+        border: 1px solid var(--color-primary);
+        border-bottom: none;
+        margin-top: 4rem;
+        font-weight: 500;
+        align-items: center;
+        background: #fff;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        font-size: .9rem;
+        text-align: center;
+        
+    }
+
+    .sp__desc {
+        text-align: justify;
+        font-size: .9rem;
+       
+    }
+
+    .box {
+        padding: .5rem;
+    }
+
+    .sp__bnb div span {
+        font-size: .7rem;
+        font-weight: 300;
+    }
+    .sp__bnb div {
+        display: flex;
+        align-items: center;
+    }
+    .bnb__num {
+        padding: .1rem .8rem;
+        border: 1px solid var(--color-primary);
+    }
+    .bnb__num p {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+   
+  
+    .comment__box {
+        margin-top: 1rem;
+        padding: 0rem .5rem;
+        margin-bottom: 6rem;
+    }
+
+    .comment__content {
+       margin: 0;
+       padding: .7rem;
+    
+    
+       
+
+    }
+
+    .comment__box h1 {
+        margin: 1.5rem;
+        font-size: .9rem;
+    }  
+    
+    .comment__info {
+    
+        text-align: center;
+        margin-top: 1rem;
+        gap: 1rem;
+        font-size: .8rem;
+    }
+    
+    .comment__info h3 {
+        font-weight: 300;
+        font-size: .7rem;
+    
+    }
+
+    .com h2 {
+        font-size: .8rem;
+    }
+  
+
+    .com {
+        padding: 2rem 1rem;
+        border-radius: .3rem;
+        width: 96%;
+     
+    }
+
+
+    
+}
+
+

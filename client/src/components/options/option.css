@@ -1,0 +1,188 @@
+
+.option__section {
+padding:3rem 6rem;
+margin: 0 auto;
+margin-top: 5rem;
+text-align: center;
+background:rgb(235, 248, 254);
+
+
+
+
+}
+
+.option__section h1 {
+    color: var(--color-variant);
+    font-weight: 600;
+    text-align: left;
+    width: 40%;
+    margin-bottom: .5rem;
+
+}
+.subheading {
+    color: rgb(0, 0, 0);
+    opacity: .7;
+
+    font-weight: 400;
+    text-align: left;
+    width: 30%;
+    
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    gap: 1rem;
+    
+}
+
+.options__content {
+
+    border: 1px dotted var(--color-variant);
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.options__content:hover {
+    cursor: pointer;
+    border-color: var(--color-secondary);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+.options__content img {
+    width: 40%;
+}
+
+.options__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.options__info h3 {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.explore__btn {
+    padding: .5rem 1.5rem;
+    background: var(--color-primary);
+    border-radius: .3rem;
+    color: #fff;
+   
+}
+
+
+/*OPTION2*/
+
+.option2 {
+padding:3rem 6rem;
+margin: 0 auto;
+background:#18425d;
+display: flex;
+flex-direction: column;
+gap: .5rem;
+font-weight: 300;
+}
+.option2 h1 {
+    width: 70%;
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.option2 h2 {
+    width: 70%;
+    color: rgb(255, 255, 255);
+    opacity: .4;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.option2 h3 {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5rem;
+ 
+}
+.option2 div {
+    width: fit-content;
+}
+
+.option {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/*RESPONSIVENESS*/
+
+@media screen and (max-width:480px) {
+    .option__section {
+        padding: 3rem 2rem;
+    }
+   
+    .options {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .option__section h1 {
+        width: 100%;
+        color: var(--color-variant);
+        font-weight: 500;
+        font-size: 1.4rem;
+    
+    }
+    .subheading {
+        width: 100%;
+        font-size: .9rem;
+    }
+ 
+    .options__content {
+    margin-left: 0;
+    margin-top: 1rem;
+    border: 1px dotted var(--color-variant);
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.options__info {
+    gap: 1rem;
+}
+
+.options__info h3 {
+    font-weight: 300;
+    font-size: 1rem;
+  
+}
+
+    .options__content:hover {
+        transform: scale(1.1);
+    }
+
+
+
+
+    .option2 {
+        padding: 3rem 2rem ;
+    }
+    .option2 h1 , .option2 h2 {
+        width: 90%;
+    }
+    .option2 h3 {
+        width: 70%;
+    }
+}
+

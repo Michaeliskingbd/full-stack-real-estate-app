@@ -1,0 +1,184 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 14px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.logo {
+    width: 10rem;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 14px;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover {
+    color: var(--color-primary);
+}
+
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: var(--color-primary);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.profile__pic {
+    width: 50px; /* Set the desired width and height for your profile picture */
+    height: 50px;
+    border-radius: 50%; /* Make it round */
+    
+    overflow: hidden; /* Ensure the image stays within the rounded shape */
+    margin-bottom: .8rem;
+}
+.profile__pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar__mobile {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:480px) {
+  
+  #navbar {
+    display: none;
+  }
+
+  nav {
+ 
+    padding: .5rem 1.5rem;
+
+  }
+  .profile__pic {
+    width: 40px; /* Set the desired width and height for your profile picture */
+    height: 40px;
+    border-radius: 50%; /* Make it round */
+    
+    overflow: hidden; /* Ensure the image stays within the rounded shape */
+    margin-bottom: .8rem;
+}
+.profile__pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  .logo {
+    width: 7rem;
+  }
+
+  /*888888888888888888888888*/
+
+  
+  .navbar__mobile {
+    display: flex;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    color: #000;
+  
+  
+   
+   
+}
+
+ 
+.navbar__mobile div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: .5rem;
+ 
+    
+}
+.navbar__mobile div:active{
+    background: rgb(189, 186, 186);
+}
+
+#ic {
+        font-size: 1.5rem;
+        
+}
+#link {
+    text-decoration: none;
+    color: inherit;
+
+}
+.active {
+    color: var(--color-primary);
+     
+}
+
+
+
+.dropdown-content {
+    position: absolute;
+    right: 1rem;
+    bottom: 4rem;
+    background: rgb(255, 255, 255);
+    color: #fff;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    
+
+
+
+}
+
+.dropdown-content li {
+ padding: .7em;
+ margin-bottom: .2rem;
+ background-color: var(--color-primary);
+}
+.dropdown-content li:hover {
+   opacity: .5;
+}
+
+
+}
+

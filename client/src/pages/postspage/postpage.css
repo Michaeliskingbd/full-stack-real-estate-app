@@ -1,0 +1,79 @@
+.postpage__container {
+margin-top: 8rem;
+background-color: #f3f5f6;
+margin: 0 ;
+padding-top: 1rem;
+
+   
+}
+
+
+.postpage {
+  
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.filter {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    padding-left: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    position: fixed;
+    top: 4rem;
+}
+
+.filter select {
+    background-color: #fff;
+    width: fit-content;
+    text-indent: 0;
+    font-size: .8rem;
+    padding: .4rem;
+    height: 2.4rem;
+    border-radius: .4rem;
+}
+
+.ppinput {
+    border: 1px solid gainsboro;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+ 
+
+ 
+}
+.ppinput input {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    background-color: rgb(238, 236, 236);
+}
+
+@media screen and (max-width:480px) {
+
+   
+.postpage {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+} 
+.filter {
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+    padding-left: 0rem;
+    margin-left: 1rem;
+    width: 80%;
+    top: 5rem;
+    position: sticky;
+}
+
+
+
+}
